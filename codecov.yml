@@ -1,0 +1,17 @@
+coverage:
+  status:
+    project:
+      default:
+        enabled: true
+        target: 100% # coverage for entire project must have 100% coverage
+    patch:
+      default:
+        enabled: true
+        target: 100% # code from the PR itself must have 100% coverage
+comment:
+  layout: diff
+  require_changes: true
+  behavior: once
+parsers:
+  javascript:
+    enable_partials: yes # https://docs.codecov.io/v4.3.6/docs/node#section-partial-line-coverage

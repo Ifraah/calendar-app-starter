@@ -1,0 +1,37 @@
+// Override any bootstrap variable here.
+@import "styles/colors.scss";
+
+$dropdown-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+$dropdown-item-padding-x: 16px;
+$dropdown-item-padding-y: 6px;
+$dropdown-link-active-bg: $grey;
+$dropdown-link-active-color: $slate;
+$dropdown-link-hover-bg: $grey-lite;
+$dropdown-padding-y: 10px;
+$enable-shadows: true;
+$font-family-base: "Gotham Rounded 3r", "Gotham Rounded A", "Gotham Rounded B", "Arial";
+$font-weight-base: 300;
+$font-weight-normal: 300;
+$grid-gutter-width: 24px;
+$h1-font-size: 24px;
+$h2-font-size: 18px;
+$h3-font-size: 16px;
+$headings-font-weight: 300;
+$line-height-base: 1.429;
+$link-color: $slate;
+$link-decoration: none;
+$link-hover-color: $blue;
+$link-hover-decoration: none;
+$navbar-brand-padding-y: 0;
+$navbar-dark-color: white;
+$navbar-dark-toggler-border-color: transparent;
+$navbar-padding-y: 0;
+$tooltip-arrow-color: $slate;
+$tooltip-bg: $slate;
+$tooltip-margin: 5px;
+$tooltip-max-width: 250px;
+$tooltip-padding-x: 9px;
+$tooltip-padding-y: 13px;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";

@@ -1,0 +1,30 @@
+// This file should only be imported in index.scss
+@import "styles/bootstrap-variables.scss";
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/transitions";
+
+button.btn-primary,
+a.btn-primary {
+  color: white;
+  cursor: pointer;
+  padding: 7px 21px;
+  border-radius: 100px;
+  border: 0;
+  background: $blue
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+  &:hover {
+    background: $blue
+      linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+}

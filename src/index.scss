@@ -1,0 +1,50 @@
+@import "styles/mixins.scss";
+@import "styles/bootstrap.scss";
+
+// Load font-awesome fonts from cdn.
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts";
+
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+:root {
+  font-size: 14px; // rem is relative to this.
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  line-height: 36px;
+}
+
+h2 {
+  line-height: 28px;
+}
+
+h3 {
+  line-height: 26px;
+}
+
+input,
+textarea,
+select,
+button {
+  @include default-text;
+
+  &,
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+button {
+  cursor: pointer;
+}

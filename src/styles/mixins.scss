@@ -1,0 +1,51 @@
+@import "styles/colors.scss";
+@import "styles/bootstrap-variables.scss";
+@import "node_modules/bootstrap/scss/mixins";
+
+@mixin gotham-rounded-light {
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+}
+
+@mixin default-text {
+  @include gotham-rounded-light;
+
+  color: $slate;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+@mixin small-text {
+  @include gotham-rounded-light;
+
+  color: $slate-lite;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin tiny-text {
+  @include gotham-rounded-light;
+
+  color: $slate;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+@mixin navigation-text {
+  @include tiny-text;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+@mixin text-gradient($direction, $gradient-start, $gradient-end) {
+  background: -webkit-linear-gradient($direction, $gradient-start, $gradient-end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin loading-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
